@@ -1,0 +1,17 @@
+{
+    "name": "History Helper",
+    "version": "1.0.0",
+    "description": "Disable tracking history of specific websites",
+    "manifest_version": 3,
+    "author": "Vaibhav Jaiswal",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "History Helper"
+    },
+    "permissions": ["tabs", "scripting","history","storage"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    }
+}
